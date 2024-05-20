@@ -4,17 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <h2>Receptsamling</h2>
+      <button>Saved recipes</button>
+      <button id="randomButton">Random recipes</button>
     </header>
-    <div id="stress">
-      <input type="text" id="searchBar" name="searchBar" />
-      <button id="search">Sök</button>
+    <div id="searchDiv">
+      <input type="text" placeholder="Enter apiKey" id="apiKey" />
+      <input
+        type="text"
+        placeholder="Enter ingredient"
+        id="searchBar"
+        name="searchBar"
+      />
+      <button id="search">Search</button>
     </div>
     <div id="results"></div>
     <script src="projekt.js"></script>
+    <footer></footer>
   </body>
 </html>

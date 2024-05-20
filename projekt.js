@@ -1,6 +1,7 @@
-const apiKey = "959001848c85469da0d74049624a2b72";
+//const apiKey = "959001848c85469da0d74049624a2b72";
 
 document.getElementById("search").addEventListener("click", function () {
+  const apiKey = document.getElementById("apiKey").value;
   const searchTerm = document.getElementById("searchBar").value;
   const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?query=${encodeURIComponent(
     searchTerm
@@ -28,7 +29,10 @@ function displayResults(results) {
   results.forEach((item) => {
     const itemDiv = document.createElement("div");
     itemDiv.textContent = item.title; // Visa receptets titel
-
     resultsDiv.appendChild(itemDiv);
   });
 }
+
+document
+  .getElementById("randomButton")
+  .addEventListener("click", function () {});
