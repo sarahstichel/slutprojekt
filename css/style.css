@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(219, 243, 217);
+  font-family: "Josefin Sans", sans-serif;
+}
+button {
+  font-family: "Josefin Sans", sans-serif;
+}
+input {
+  font-family: "Josefin Sans", sans-serif;
+}
+header {
+  padding: 2%;
+  background-color: rgb(185, 240, 185);
+  border-color: black;
+  border-radius: 10px;
+}
+a {
+  background-color: rgb(141, 193, 141);
+  text-decoration: none;
+  padding: 3px;
+  color: black;
+}
+a:hover {
+  background-color: rgb(109, 189, 109);
+}
+img {
+  width: 48%;
+  float: left;
+}
+.list {
+  width: 48%;
+  float: left;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: black;
+}
+.wrapper {
+  width: 100%;
+}
