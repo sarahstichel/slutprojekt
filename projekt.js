@@ -1,7 +1,7 @@
 //const apiKey = "959001848c85469da0d74049624a2b72";
+const apiKey = document.getElementById("apiKey").value;
 
 document.getElementById("search").addEventListener("click", function () {
-  const apiKey = document.getElementById("apiKey").value;
   const searchTerm = document.getElementById("searchBar").value;
   const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?query=${encodeURIComponent(
     searchTerm
@@ -22,7 +22,6 @@ document.getElementById("search").addEventListener("click", function () {
       console.error("Error:", error);
     });
 });
-
 function displayResults(results) {
   const resultsDiv = document.getElementById("results");
   resultsDiv.innerHTML = ""; // Rensa tidigare resultat
@@ -33,6 +32,9 @@ function displayResults(results) {
   });
 }
 
-document
-  .getElementById("randomButton")
-  .addEventListener("click", function () {});
+document.getElementById("randomButton").addEventListener("click", function () {
+  const randomDiv = document.getElementById("randomDiv");
+  const apiUrl = `https://api.spoonacular.com/recipes/random&apiKey=${apiKey}
+  
+  `;
+});

@@ -37,3 +37,17 @@ img {
 .wrapper {
   width: 100%;
 }
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  padding: 5px;
+  background-color: rgb(185, 240, 185);
+  width: 100%;
+}
+
+table {
+  border: solid;
+  border-color: black;
+  width: 100%;
+}
