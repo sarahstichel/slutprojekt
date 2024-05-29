@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kontakt</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,23 +17,23 @@
       <h2>Recept</h2>
       <nav>
         <a href="sparat.html">Sparade recept</a>
-        <a href="kontakt.html">Kontakt</a>
+        <a href="index.html">Sök recept</a>
       </nav>
     </header>
     <main>
-      <div id="searchDiv">
-        <input type="text" placeholder="API-nyckel" id="apiKey" />
-
-        <input
-          type="text"
-          placeholder="Sök ingrediens(engelska)"
-          id="searchBar"
-          name="searchBar"
-        />
-        <button id="search">Sök</button>
+      <div id="background-div">
+        <form id="form">
+          <label for="name">Namn:</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label for="email">Mejladress:</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <label for="subject">Ämne:</label><br />
+          <input type="text" id="subject" name="subject" /><br />
+          <label for="message">Meddelande:</label><br />
+          <input type="text" id="message" name="message" /><br />
+          <button type="submit-button">Skicka in</button>
+        </form>
       </div>
-      <div id="results"></div>
-      <div id="details"></div>
     </main>
     <footer>
       <p>
@@ -43,6 +43,6 @@
         ipsam facere consequatur.
       </p>
     </footer>
-    <script src="projekt.js"></script>
+    <script src="kontakt.html"></script>
   </body>
 </html>

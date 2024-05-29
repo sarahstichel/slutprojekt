@@ -7,14 +7,6 @@ const search = function () {
     searchTerm
   )}&apiKey=${apiKey}&addRecipeInformation=true`;
 
-  // async function getRecipes(apiUrl) {
-  //   const response = await fetch(apiUrl);
-  //   const data = await response.json();
-  //   return data.results;
-  // }
-
-  // console.log(data.results);
-
   fetch(apiUrl)
     .then((response) => {
       if (!response.ok) {
@@ -31,20 +23,6 @@ const search = function () {
     });
 };
 
-document.getElementById("search").addEventListener("click", search);
-
-function createRecipeLinks(recipes) {
-  const baseUrl = "https://spoonacular.com/recipes";
-  const linkContainer = getElementById("results");
-
-  recipes.forEach((recipe) => {
-    const title = recipe.title;
-    const urlTitle = title.toLowerCase().replace(/ /g, "-");
-    const recipeId = recipe.id;
-    const recipeUrl = `${baseUrl}/${urlTitle}-${recipeId}`;
-  });
-}
-
 function displayResults(results) {
   const resultsDiv = document.getElementById("results");
   resultsDiv.innerHTML = ""; // Rensa tidigare resultat
@@ -59,6 +37,7 @@ function displayResults(results) {
   });
 }
 
+document.getElementById("search").addEventListener("click", search);
 document.addEventListener("keydown", (event) => {
   if (event.key == "Enter") {
     search();
