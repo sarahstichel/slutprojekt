@@ -1,5 +1,3 @@
-//const apiKey = "959001848c85469da0d74049624a2b72";
-
 const search = function () {
   const apiKey = document.getElementById("apiKey").value;
   const searchTerm = document.getElementById("searchBar").value;
@@ -31,7 +29,7 @@ function displayResults(results) {
     const itemDiv = document.createElement("div");
     itemDiv.textContent = item.title; // Visa receptets titel
     itemDiv.addEventListener("click", () => {
-      window.location.href = item.sourceUrl;
+      window.location.href = item.sourceUrl; //Länka till hemsidan för receptet
     });
     resultsDiv.appendChild(itemDiv);
   });
